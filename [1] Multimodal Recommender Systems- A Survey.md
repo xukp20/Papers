@@ -166,3 +166,29 @@ two categories:
 
 - End to end 
 - Two step
+
+### End-to-end Training
+
+often use pretrained encoder to reduce computation cost
+
+### Two-step Training
+
+- train the encoder
+- train the recommendation network
+
+
+
+## Application 
+
+pass
+
+
+
+## Challenges
+
+- A Universal Solution
+  - **how different modalities interact with each other? **
+
+- Model Interpretability
+- Computational  Complexity
+- General MRS dataset
