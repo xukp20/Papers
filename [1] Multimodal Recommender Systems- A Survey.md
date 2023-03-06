@@ -51,4 +51,36 @@ model:
     - MMGCN: a user-item graph for each modality
     - GRCN: upgrade by deleting incorrect interaction data when training
   - consider user's preference for different modallities
-    - DualGNN
+    - DualGNN: use correlation (user co-occurrence graph) between users to learn user preferences
+    - MMGCL: new multimodal graph contrastive learning method 
+      - modal edge loss, modal masking
+      - novel negative sampling technique -> correlation between modalities
+    - MGAT: gated attention based on MMGCN to catch preference for modalities
+- Item-item Graph
+  - LATTICE: item-item graph for each modality from user-item graph
+  - MICRO: new comparison method
+  - HCGCN: clustering graph convolutional network 
+    - first groups item-item and user-item graphs
+    - dynamic graph clustering
+  - PMGT: pre-trained graph transformer, Bert structure
+  - BGCN: bundle recommendation, to recommend a bundle of items at a time
+    - user-item interaction, user-bundle interaction, bundle-item affiliation
+  - Cross-CBR: user-bundle graph + user-item diagram + item-bundle graph
+    - contrastive learning: to encode the similar items similarly
+
+- Knowledge Graph
+  - MKGAT: first to introduce KG
+  - SI-MKR: 
+    - alternate training: 多任务学习
+    - knowledge graph representation based on MKR
+  - MMKGV: graph attention network
+  - CMCKG: two modals -> to maximize consistency between two
+    - descriptive attributes
+    - structural connections 
+
+### Fusion
+
+it aims at combining various preferences to modalities
+
+attention: most used
+
