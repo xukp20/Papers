@@ -84,3 +84,85 @@ it aims at combining various preferences to modalities
 
 attention: most used
 
+- Coarse-grained Attention：粗粒度的Attention
+
+  - UVCAN
+  - MCPTR
+  - CMBF: cross-attention, 分别学习image和text的语义信息
+  - different proportions of Attention:
+    - MML: attention based on id, assisted by visual & text
+    - MCPTR: each modal equal, self-attention -> fusion weight
+    - HCGCN: more on visual & text info
+
+- fine-grained Attention
+
+  - >  coarse-grained fusion is often invasive and irreversible
+
+  - POG: online clothing, transformer, encoder
+  - NOR: encoder-decoder
+  - EFRM: 
+    - a Semantic Extraction Network: SEN
+  - VECF: image segmentation
+  - UVCAN: video -> image
+  - MM-Rec: 
+    - the target detection algorithm Mask-RCNN,
+    - fuses POI with news content using co-attention
+
+- Combined-Attention
+
+- Others
+
+### Filtration
+
+过滤
+
+multimodal data may includes unrelated information
+
+to filter out noisy data
+
+two types:
+
+- exist in interaction graph: bridge part
+- exist in the multimodal feature itself: fusion part
+
+methods:
+
+- image processing
+  - VECF, UVCAN: image segmentation to remove noise
+  - MM-Rec: target detection
+- graph neural networks
+  - FREEDOM:  degree-sensitive edge pruning method
+  - GRCN: prune wrong interaction information
+  - PMGCRN
+  - MEGCF
+
+
+
+## Multimodal Feature Enhancement
+
+to handle sparsity problem
+
+### Disentangled Representation Learning
+
+解纠缠表示学习
+
+不同的模态特征对于user preference 有不同的影响，而同一个样本的多模态feature很多是相互纠缠的，因此需要将不同的模态feature彼此拆分出来，学习各自的表示
+
+### Contrastive Learning
+
+data augmentation 
+
+#### CL Loss
+
+Contrastive learning 对比学习的目标是使在学习到的embedding space中，相似的item距离尽量近，而不相似的item尽量远
+
+这里是将同一个item的多个模态feature的embedding 尽量相似
+
+
+
+## Model Optimization
+
+two categories:
+
+- End to end 
+- Two step
