@@ -118,7 +118,3 @@ whether a token is replaced
 - Rearrange Sequence Prediction: Whether the user interaction history has been rearranged
 - MLM -> learn graph representations ->  Masked Node Prediction, Masked Edge Prediction
 - NSP -> CTR, Next K Behaviors 
-
-
-
-## 6 
