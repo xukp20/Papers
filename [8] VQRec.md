@@ -1,0 +1,1 @@
+Bert -> Item embedding from PLM -> separate into codes -> min distance to the pre-set codes -> coding embedding -> mean for item embedding -> SASRec -> seq embedding
