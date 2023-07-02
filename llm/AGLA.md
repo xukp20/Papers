@@ -71,4 +71,10 @@ Eval: avg (for different length) of ...
 
 ### 4 Preference Model Pre-Training and Transfer
 
-PMP TODO!
+Pipeline:
+
+- LM Pretraining
+- PMP:  smaller preference modeling dataset relevant for alignment
+- PM Finetuning
+
+binary > ranked
