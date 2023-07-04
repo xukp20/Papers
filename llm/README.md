@@ -8,7 +8,12 @@ References related to **Chain of Thought**:
 
 - Scratch pad of SYW
 - CoT: *Chain-of-Thought Prompting Elicits Reasoning in Large Language Models* 
-  - Reference: *Language Models are Few-Shot Learners*
+- *Language Models are Few-Shot Learners*
+
+ORMs and PRMs:
+
+- *Solving math word problems with process- and outcome-based feedback*
+
 
 
 
