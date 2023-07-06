@@ -1,0 +1,1 @@
+- From LLaVa：Use GPT to generate natural representation of MATH pics
