@@ -1,5 +1,3 @@
-CLIP
-
 BLIP2
 
 LaVIN
